@@ -1,0 +1,103 @@
+{
+  "overall": {
+    "model_directional_acc": 49.39110070257611,
+    "persistence_directional_acc": 9.508196721311474,
+    "random_guess_directional_acc": 33.333333333333336,
+    "directional_lift_pp": 39.88290398126464,
+    "directional_lift_vs_random_pp": 16.057767369242775,
+    "flat_share": 9.508196721311474,
+    "n_obs": 4270
+  },
+  "per_category": {
+    "auto": {
+      "model_directional_acc": 49.373433583959894,
+      "persistence_directional_acc": 9.774436090225564,
+      "random_guess_directional_acc": 33.333333333333336,
+      "directional_lift_pp": 39.59899749373433,
+      "directional_lift_vs_random_pp": 16.04010025062656,
+      "flat_share": 9.774436090225564,
+      "n_obs": 399
+    },
+    "bed_bath_table": {
+      "model_directional_acc": 54.6485260770975,
+      "persistence_directional_acc": 10.430839002267573,
+      "random_guess_directional_acc": 33.333333333333336,
+      "directional_lift_pp": 44.21768707482993,
+      "directional_lift_vs_random_pp": 21.315192743764165,
+      "flat_share": 10.430839002267573,
+      "n_obs": 441
+    },
+    "computers_accessories": {
+      "model_directional_acc": 48.29931972789115,
+      "persistence_directional_acc": 11.337868480725625,
+      "random_guess_directional_acc": 33.333333333333336,
+      "directional_lift_pp": 36.961451247165535,
+      "directional_lift_vs_random_pp": 14.965986394557817,
+      "flat_share": 11.337868480725625,
+      "n_obs": 441
+    },
+    "furniture_decor": {
+      "model_directional_acc": 45.494505494505496,
+      "persistence_directional_acc": 10.54945054945055,
+      "random_guess_directional_acc": 33.333333333333336,
+      "directional_lift_pp": 34.94505494505494,
+      "directional_lift_vs_random_pp": 12.16117216117216,
+      "flat_share": 10.54945054945055,
+      "n_obs": 455
+    },
+    "garden_tools": {
+      "model_directional_acc": 50.877192982456144,
+      "persistence_directional_acc": 6.516290726817042,
+      "random_guess_directional_acc": 33.333333333333336,
+      "directional_lift_pp": 44.360902255639104,
+      "directional_lift_vs_random_pp": 17.54385964912281,
+      "flat_share": 6.516290726817042,
+      "n_obs": 399
+    },
+    "health_beauty": {
+      "model_directional_acc": 56.25,
+      "persistence_directional_acc": 10.491071428571429,
+      "random_guess_directional_acc": 33.333333333333336,
+      "directional_lift_pp": 45.75892857142857,
+      "directional_lift_vs_random_pp": 22.916666666666664,
+      "flat_share": 10.491071428571429,
+      "n_obs": 448
+    },
+    "housewares": {
+      "model_directional_acc": 54.332552693208434,
+      "persistence_directional_acc": 10.070257611241217,
+      "random_guess_directional_acc": 33.333333333333336,
+      "directional_lift_pp": 44.26229508196722,
+      "directional_lift_vs_random_pp": 20.9992193598751,
+      "flat_share": 10.070257611241217,
+      "n_obs": 427
+    },
+    "sports_leisure": {
+      "model_directional_acc": 46.875,
+      "persistence_directional_acc": 10.714285714285714,
+      "random_guess_directional_acc": 33.333333333333336,
+      "directional_lift_pp": 36.160714285714285,
+      "directional_lift_vs_random_pp": 13.541666666666664,
+      "flat_share": 10.714285714285714,
+      "n_obs": 448
+    },
+    "telephony": {
+      "model_directional_acc": 41.66666666666667,
+      "persistence_directional_acc": 5.952380952380952,
+      "random_guess_directional_acc": 33.333333333333336,
+      "directional_lift_pp": 35.714285714285715,
+      "directional_lift_vs_random_pp": 8.333333333333336,
+      "flat_share": 5.952380952380952,
+      "n_obs": 420
+    },
+    "watches_gifts": {
+      "model_directional_acc": 45.66326530612245,
+      "persistence_directional_acc": 8.673469387755102,
+      "random_guess_directional_acc": 33.333333333333336,
+      "directional_lift_pp": 36.98979591836735,
+      "directional_lift_vs_random_pp": 12.329931972789112,
+      "flat_share": 8.673469387755102,
+      "n_obs": 392
+    }
+  }
+}

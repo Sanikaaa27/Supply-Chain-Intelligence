@@ -1,0 +1,170 @@
+{
+  "1": {
+    "80": {
+      "avg_width_scaled": 0.03091528295791068,
+      "avg_width_raw": 2.4576891605387745,
+      "avg_width_raw_calibrated": 3.0739900119952415,
+      "raw_empirical_coverage": 0.6786885245901639,
+      "calibrated_empirical_coverage": 0.8,
+      "conformal_pad": 0.30815042572823387,
+      "target_coverage": 0.8,
+      "well_calibrated_raw": false,
+      "well_calibrated": true
+    },
+    "95": {
+      "avg_width_scaled": 0.05266340639684872,
+      "avg_width_raw": 4.48808722418847,
+      "avg_width_raw_calibrated": 5.378235631460662,
+      "raw_empirical_coverage": 0.8639344262295082,
+      "calibrated_empirical_coverage": 0.9491803278688524,
+      "conformal_pad": 0.4450742036360947,
+      "target_coverage": 0.95,
+      "well_calibrated_raw": false,
+      "well_calibrated": true
+    }
+  },
+  "2": {
+    "80": {
+      "avg_width_scaled": 0.04937921768762494,
+      "avg_width_raw": 3.9907511339979913,
+      "avg_width_raw_calibrated": 5.083480477767108,
+      "raw_empirical_coverage": 0.6934426229508197,
+      "calibrated_empirical_coverage": 0.8,
+      "conformal_pad": 0.5463646718845591,
+      "target_coverage": 0.8,
+      "well_calibrated_raw": false,
+      "well_calibrated": true
+    },
+    "95": {
+      "avg_width_scaled": 0.07858841096079978,
+      "avg_width_raw": 6.530778317213682,
+      "avg_width_raw_calibrated": 8.378103368795221,
+      "raw_empirical_coverage": 0.8770491803278688,
+      "calibrated_empirical_coverage": 0.9491803278688524,
+      "conformal_pad": 0.9236625257907696,
+      "target_coverage": 0.95,
+      "well_calibrated_raw": false,
+      "well_calibrated": true
+    }
+  },
+  "3": {
+    "80": {
+      "avg_width_scaled": 0.062157049999150525,
+      "avg_width_raw": 4.979707633897225,
+      "avg_width_raw_calibrated": 6.578085901350404,
+      "raw_empirical_coverage": 0.6655737704918033,
+      "calibrated_empirical_coverage": 0.8,
+      "conformal_pad": 0.7991891337265894,
+      "target_coverage": 0.8,
+      "well_calibrated_raw": false,
+      "well_calibrated": true
+    },
+    "95": {
+      "avg_width_scaled": 0.11081085663528163,
+      "avg_width_raw": 9.025977144492753,
+      "avg_width_raw_calibrated": 11.16431657903537,
+      "raw_empirical_coverage": 0.8770491803278688,
+      "calibrated_empirical_coverage": 0.9491803278688524,
+      "conformal_pad": 1.0691697172713095,
+      "target_coverage": 0.95,
+      "well_calibrated_raw": false,
+      "well_calibrated": true
+    }
+  },
+  "4": {
+    "80": {
+      "avg_width_scaled": 0.07501253897231766,
+      "avg_width_raw": 5.990047815576951,
+      "avg_width_raw_calibrated": 8.132646379749623,
+      "raw_empirical_coverage": 0.6262295081967213,
+      "calibrated_empirical_coverage": 0.8,
+      "conformal_pad": 1.0712992820863365,
+      "target_coverage": 0.8,
+      "well_calibrated_raw": false,
+      "well_calibrated": true
+    },
+    "95": {
+      "avg_width_scaled": 0.1533439309105156,
+      "avg_width_raw": 12.179931726918285,
+      "avg_width_raw_calibrated": 14.192931761057782,
+      "raw_empirical_coverage": 0.8885245901639345,
+      "calibrated_empirical_coverage": 0.9491803278688524,
+      "conformal_pad": 1.0065000170697478,
+      "target_coverage": 0.95,
+      "well_calibrated_raw": true,
+      "well_calibrated": true
+    }
+  },
+  "5": {
+    "80": {
+      "avg_width_scaled": 0.08794459674272874,
+      "avg_width_raw": 6.994042741555406,
+      "avg_width_raw_calibrated": 9.635027746799521,
+      "raw_empirical_coverage": 0.6196721311475409,
+      "calibrated_empirical_coverage": 0.8,
+      "conformal_pad": 1.3204925026220582,
+      "target_coverage": 0.8,
+      "well_calibrated_raw": false,
+      "well_calibrated": true
+    },
+    "95": {
+      "avg_width_scaled": 0.17817734059890566,
+      "avg_width_raw": 13.858426318953805,
+      "avg_width_raw_calibrated": 16.240369348973292,
+      "raw_empirical_coverage": 0.8672131147540983,
+      "calibrated_empirical_coverage": 0.9491803278688524,
+      "conformal_pad": 1.1909715150097437,
+      "target_coverage": 0.95,
+      "well_calibrated_raw": false,
+      "well_calibrated": true
+    }
+  },
+  "6": {
+    "80": {
+      "avg_width_scaled": 0.10551017734834678,
+      "avg_width_raw": 8.299800241106883,
+      "avg_width_raw_calibrated": 11.408582521662705,
+      "raw_empirical_coverage": 0.6213114754098361,
+      "calibrated_empirical_coverage": 0.8,
+      "conformal_pad": 1.554391140277911,
+      "target_coverage": 0.8,
+      "well_calibrated_raw": false,
+      "well_calibrated": true
+    },
+    "95": {
+      "avg_width_scaled": 0.2081045936642942,
+      "avg_width_raw": 15.753874859699398,
+      "avg_width_raw_calibrated": 18.91416027512147,
+      "raw_empirical_coverage": 0.8754098360655738,
+      "calibrated_empirical_coverage": 0.9491803278688524,
+      "conformal_pad": 1.5801427077110357,
+      "target_coverage": 0.95,
+      "well_calibrated_raw": false,
+      "well_calibrated": true
+    }
+  },
+  "7": {
+    "80": {
+      "avg_width_scaled": 0.13914044008045173,
+      "avg_width_raw": 10.550005773331621,
+      "avg_width_raw_calibrated": 13.16787771182072,
+      "raw_empirical_coverage": 0.6655737704918033,
+      "calibrated_empirical_coverage": 0.8,
+      "conformal_pad": 1.3089359692445504,
+      "target_coverage": 0.8,
+      "well_calibrated_raw": false,
+      "well_calibrated": true
+    },
+    "95": {
+      "avg_width_scaled": 0.25730936557968315,
+      "avg_width_raw": 18.709857460927815,
+      "avg_width_raw_calibrated": 21.27701149783969,
+      "raw_empirical_coverage": 0.8885245901639345,
+      "calibrated_empirical_coverage": 0.9491803278688524,
+      "conformal_pad": 1.2835770184559392,
+      "target_coverage": 0.95,
+      "well_calibrated_raw": true,
+      "well_calibrated": true
+    }
+  }
+}

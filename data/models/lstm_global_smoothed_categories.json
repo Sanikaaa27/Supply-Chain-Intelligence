@@ -1,0 +1,12 @@
+{
+  "auto": 0,
+  "bed_bath_table": 1,
+  "computers_accessories": 2,
+  "furniture_decor": 3,
+  "garden_tools": 4,
+  "health_beauty": 5,
+  "housewares": 6,
+  "sports_leisure": 7,
+  "telephony": 8,
+  "watches_gifts": 9
+}

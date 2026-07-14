@@ -1,0 +1,110 @@
+{
+  "global_default_model": "gbm",
+  "global_default_reason": "Lowest pooled avg MAPE across all categories with results (18.56%).",
+  "category_wins": {
+    "gbm": 9,
+    "lstm": 1
+  },
+  "per_category": {
+    "auto": {
+      "selected_model": "gbm",
+      "confidence": "low",
+      "reason": "Margin over runner-up (1.41pp, 8.2% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+      "mapes": {
+        "baseline": 17.20800605880342,
+        "lstm": 19.65834172566732,
+        "gbm": 15.793595790526696
+      }
+    },
+    "bed_bath_table": {
+      "selected_model": "gbm",
+      "confidence": "low",
+      "reason": "Margin over runner-up (3.59pp, 20.6% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+      "mapes": {
+        "baseline": 13.825843619227465,
+        "lstm": 19.837555567423504,
+        "gbm": 17.41320871165453
+      }
+    },
+    "computers_accessories": {
+      "selected_model": "gbm",
+      "confidence": "low",
+      "reason": "Margin over runner-up (1.65pp, 9.3% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+      "mapes": {
+        "baseline": 17.67613607327708,
+        "lstm": 20.61850929260254,
+        "gbm": 16.027307414968828
+      }
+    },
+    "furniture_decor": {
+      "selected_model": "gbm",
+      "confidence": "low",
+      "reason": "Margin over runner-up (0.06pp, 0.3% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+      "mapes": {
+        "baseline": 18.081642635178778,
+        "lstm": 20.25237687428792,
+        "gbm": 18.137633495572025
+      }
+    },
+    "garden_tools": {
+      "selected_model": "gbm",
+      "confidence": "low",
+      "reason": "Margin over runner-up (1.71pp, 6.8% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+      "mapes": {
+        "baseline": 27.753372849594115,
+        "lstm": 24.989413897196453,
+        "gbm": 23.28018317219137
+      }
+    },
+    "health_beauty": {
+      "selected_model": "gbm",
+      "confidence": "low",
+      "reason": "Margin over runner-up (4.76pp, 27.0% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+      "mapes": {
+        "baseline": 12.877188621793067,
+        "lstm": 19.136351267496742,
+        "gbm": 17.633814223449146
+      }
+    },
+    "housewares": {
+      "selected_model": "gbm",
+      "confidence": "low",
+      "reason": "Margin over runner-up (5.00pp, 26.6% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+      "mapes": {
+        "baseline": 13.785465980526972,
+        "lstm": 21.271578788757324,
+        "gbm": 18.7825062140515
+      }
+    },
+    "sports_leisure": {
+      "selected_model": "gbm",
+      "confidence": "low",
+      "reason": "Margin over runner-up (2.31pp, 13.2% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+      "mapes": {
+        "baseline": 17.55310645238958,
+        "lstm": 19.13680426279704,
+        "gbm": 15.244446534961003
+      }
+    },
+    "telephony": {
+      "selected_model": "lstm",
+      "confidence": "high",
+      "reason": "Lowest MAPE (21.08%), beating runner-up by 5.88pp (21.8% relative) \u2014 clears both the 5.15pp noise threshold and the 5% relative-improvement floor.",
+      "mapes": {
+        "baseline": 31.173773790314403,
+        "lstm": 21.08113670349121,
+        "gbm": 26.961057187353152
+      }
+    },
+    "watches_gifts": {
+      "selected_model": "gbm",
+      "confidence": "low",
+      "reason": "Margin over runner-up (2.12pp, 11.5% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+      "mapes": {
+        "baseline": 21.72414518911293,
+        "lstm": 18.40096632639567,
+        "gbm": 16.2834027301251
+      }
+    }
+  }
+}

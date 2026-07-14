@@ -1,0 +1,72 @@
+{
+  "bed_bath_table": {
+    "total_days": 714,
+    "zero_days": 103,
+    "active_days": 611,
+    "zero_pct": 14.4,
+    "avg_daily_demand": 18.35
+  },
+  "health_beauty": {
+    "total_days": 714,
+    "zero_days": 103,
+    "active_days": 611,
+    "zero_pct": 14.4,
+    "avg_daily_demand": 15.72
+  },
+  "sports_leisure": {
+    "total_days": 714,
+    "zero_days": 103,
+    "active_days": 611,
+    "zero_pct": 14.4,
+    "avg_daily_demand": 13.98
+  },
+  "furniture_decor": {
+    "total_days": 714,
+    "zero_days": 103,
+    "active_days": 611,
+    "zero_pct": 14.4,
+    "avg_daily_demand": 13.51
+  },
+  "computers_accessories": {
+    "total_days": 714,
+    "zero_days": 103,
+    "active_days": 611,
+    "zero_pct": 14.4,
+    "avg_daily_demand": 12.89
+  },
+  "housewares": {
+    "total_days": 714,
+    "zero_days": 103,
+    "active_days": 611,
+    "zero_pct": 14.4,
+    "avg_daily_demand": 11.6
+  },
+  "watches_gifts": {
+    "total_days": 714,
+    "zero_days": 103,
+    "active_days": 611,
+    "zero_pct": 14.4,
+    "avg_daily_demand": 10.26
+  },
+  "telephony": {
+    "total_days": 714,
+    "zero_days": 103,
+    "active_days": 611,
+    "zero_pct": 14.4,
+    "avg_daily_demand": 7.59
+  },
+  "garden_tools": {
+    "total_days": 714,
+    "zero_days": 103,
+    "active_days": 611,
+    "zero_pct": 14.4,
+    "avg_daily_demand": 7.33
+  },
+  "auto": {
+    "total_days": 714,
+    "zero_days": 103,
+    "active_days": 611,
+    "zero_pct": 14.4,
+    "avg_daily_demand": 7.15
+  }
+}

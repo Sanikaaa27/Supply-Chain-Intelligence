@@ -1,0 +1,313 @@
+{
+  "leaderboard": [
+    {
+      "rank": 1,
+      "model": "gbm",
+      "avg_mape": 18.555715547485335,
+      "median_mape": 17.523511467551838,
+      "n_categories": 10,
+      "avg_mase": 3.848996156454164,
+      "avg_forecast_skill_pct": 6.211536047797451
+    },
+    {
+      "rank": 2,
+      "model": "baseline",
+      "avg_mape": 19.16586812702178,
+      "median_mape": 17.61462126283333,
+      "n_categories": 10,
+      "avg_mase": NaN,
+      "avg_forecast_skill_pct": NaN
+    },
+    {
+      "rank": 3,
+      "model": "lstm",
+      "avg_mape": 20.438303470611572,
+      "median_mape": 20.044966220855713,
+      "n_categories": 10,
+      "avg_mase": 4.038353339831035,
+      "avg_forecast_skill_pct": -3.5921222414994967
+    }
+  ],
+  "category_leaderboard": [
+    {
+      "category": "auto",
+      "baseline_mape": 17.20800605880342,
+      "lstm_mape": 19.65834172566732,
+      "gbm_mape": 15.793595790526696,
+      "best_model": "no_clear_winner",
+      "margin_pp": 1.4144102682767237,
+      "margin_pct": 8.219489599453782,
+      "noise_threshold_pp": 5.15250424695116,
+      "threshold_source": "gbm_cv",
+      "margin_is_genuine": false
+    },
+    {
+      "category": "bed_bath_table",
+      "baseline_mape": 13.825843619227465,
+      "lstm_mape": 19.837555567423504,
+      "gbm_mape": 17.41320871165453,
+      "best_model": "no_clear_winner",
+      "margin_pp": 3.5873650924270652,
+      "margin_pct": 20.6014017969363,
+      "noise_threshold_pp": 5.15250424695116,
+      "threshold_source": "gbm_cv",
+      "margin_is_genuine": false
+    },
+    {
+      "category": "computers_accessories",
+      "baseline_mape": 17.67613607327708,
+      "lstm_mape": 20.61850929260254,
+      "gbm_mape": 16.027307414968828,
+      "best_model": "no_clear_winner",
+      "margin_pp": 1.6488286583082505,
+      "margin_pct": 9.327992562814465,
+      "noise_threshold_pp": 5.15250424695116,
+      "threshold_source": "gbm_cv",
+      "margin_is_genuine": false
+    },
+    {
+      "category": "furniture_decor",
+      "baseline_mape": 18.081642635178778,
+      "lstm_mape": 20.25237687428792,
+      "gbm_mape": 18.137633495572025,
+      "best_model": "no_clear_winner",
+      "margin_pp": 0.05599086039324774,
+      "margin_pct": 0.3086999216679337,
+      "noise_threshold_pp": 5.15250424695116,
+      "threshold_source": "gbm_cv",
+      "margin_is_genuine": false
+    },
+    {
+      "category": "garden_tools",
+      "baseline_mape": 27.753372849594115,
+      "lstm_mape": 24.989413897196453,
+      "gbm_mape": 23.28018317219137,
+      "best_model": "no_clear_winner",
+      "margin_pp": 1.7092307250050816,
+      "margin_pct": 6.839819181180712,
+      "noise_threshold_pp": 5.15250424695116,
+      "threshold_source": "gbm_cv",
+      "margin_is_genuine": false
+    },
+    {
+      "category": "health_beauty",
+      "baseline_mape": 12.877188621793067,
+      "lstm_mape": 19.136351267496742,
+      "gbm_mape": 17.633814223449146,
+      "best_model": "no_clear_winner",
+      "margin_pp": 4.756625601656079,
+      "margin_pct": 26.974456809978182,
+      "noise_threshold_pp": 5.15250424695116,
+      "threshold_source": "gbm_cv",
+      "margin_is_genuine": false
+    },
+    {
+      "category": "housewares",
+      "baseline_mape": 13.785465980526972,
+      "lstm_mape": 21.271578788757324,
+      "gbm_mape": 18.7825062140515,
+      "best_model": "no_clear_winner",
+      "margin_pp": 4.99704023352453,
+      "margin_pct": 26.604757515193377,
+      "noise_threshold_pp": 5.15250424695116,
+      "threshold_source": "gbm_cv",
+      "margin_is_genuine": false
+    },
+    {
+      "category": "sports_leisure",
+      "baseline_mape": 17.55310645238958,
+      "lstm_mape": 19.13680426279704,
+      "gbm_mape": 15.244446534961003,
+      "best_model": "no_clear_winner",
+      "margin_pp": 2.308659917428578,
+      "margin_pct": 13.152429307544534,
+      "noise_threshold_pp": 5.15250424695116,
+      "threshold_source": "gbm_cv",
+      "margin_is_genuine": false
+    },
+    {
+      "category": "telephony",
+      "baseline_mape": 31.173773790314403,
+      "lstm_mape": 21.08113670349121,
+      "gbm_mape": 26.961057187353152,
+      "best_model": "lstm",
+      "margin_pp": 5.879920483861941,
+      "margin_pct": 21.808938881744165,
+      "noise_threshold_pp": 5.15250424695116,
+      "threshold_source": "gbm_cv",
+      "margin_is_genuine": true
+    },
+    {
+      "category": "watches_gifts",
+      "baseline_mape": 21.72414518911293,
+      "lstm_mape": 18.40096632639567,
+      "gbm_mape": 16.2834027301251,
+      "best_model": "no_clear_winner",
+      "margin_pp": 2.1175635962705712,
+      "margin_pct": 11.507893437275548,
+      "noise_threshold_pp": 5.15250424695116,
+      "threshold_source": "gbm_cv",
+      "margin_is_genuine": false
+    }
+  ],
+  "skill_tables": {
+    "gbm_vs_baseline": {
+      "per_category": {
+        "auto": 8.219489599453782,
+        "bed_bath_table": -25.946807957802676,
+        "computers_accessories": 9.327992562814465,
+        "furniture_decor": -0.3096558289694024,
+        "garden_tools": 16.117643436149645,
+        "health_beauty": -36.93838570948687,
+        "housewares": -36.24861314505605,
+        "sports_leisure": 13.152429307544534,
+        "telephony": 13.51365616270087,
+        "watches_gifts": 25.044679142148535
+      },
+      "avg_pct": -1.4067572430503172,
+      "n_categories_compared": 10
+    },
+    "lstm_vs_baseline": {
+      "per_category": {
+        "auto": -14.239509554393354,
+        "bed_bath_table": -43.48170074653246,
+        "computers_accessories": -16.64602041491276,
+        "furniture_decor": -12.00518273094207,
+        "garden_tools": 9.959001982845786,
+        "health_beauty": -48.60659286383992,
+        "housewares": -54.30438709003425,
+        "sports_leisure": -9.02232214396365,
+        "telephony": 32.37541003123255,
+        "watches_gifts": 15.297167431852154
+      },
+      "avg_pct": -14.067413609868797,
+      "n_categories_compared": 10
+    },
+    "gbm_vs_lstm": {
+      "per_category": {
+        "auto": 19.65957245566923,
+        "bed_bath_table": 12.220995916201218,
+        "computers_accessories": 22.267380306106478,
+        "furniture_decor": 10.441951539035085,
+        "garden_tools": 6.839819181180712,
+        "health_beauty": 7.851742597344918,
+        "housewares": 11.701400255355626,
+        "sports_leisure": 20.33964330921744,
+        "telephony": -27.8918569077358,
+        "watches_gifts": 11.507893437275548
+      },
+      "avg_pct": 9.493854208965047,
+      "n_categories_compared": 10
+    }
+  },
+  "selection": {
+    "global_default_model": "gbm",
+    "global_default_reason": "Lowest pooled avg MAPE across all categories with results (18.56%).",
+    "category_wins": {
+      "gbm": 9,
+      "lstm": 1
+    },
+    "per_category": {
+      "auto": {
+        "selected_model": "gbm",
+        "confidence": "low",
+        "reason": "Margin over runner-up (1.41pp, 8.2% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+        "mapes": {
+          "baseline": 17.20800605880342,
+          "lstm": 19.65834172566732,
+          "gbm": 15.793595790526696
+        }
+      },
+      "bed_bath_table": {
+        "selected_model": "gbm",
+        "confidence": "low",
+        "reason": "Margin over runner-up (3.59pp, 20.6% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+        "mapes": {
+          "baseline": 13.825843619227465,
+          "lstm": 19.837555567423504,
+          "gbm": 17.41320871165453
+        }
+      },
+      "computers_accessories": {
+        "selected_model": "gbm",
+        "confidence": "low",
+        "reason": "Margin over runner-up (1.65pp, 9.3% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+        "mapes": {
+          "baseline": 17.67613607327708,
+          "lstm": 20.61850929260254,
+          "gbm": 16.027307414968828
+        }
+      },
+      "furniture_decor": {
+        "selected_model": "gbm",
+        "confidence": "low",
+        "reason": "Margin over runner-up (0.06pp, 0.3% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+        "mapes": {
+          "baseline": 18.081642635178778,
+          "lstm": 20.25237687428792,
+          "gbm": 18.137633495572025
+        }
+      },
+      "garden_tools": {
+        "selected_model": "gbm",
+        "confidence": "low",
+        "reason": "Margin over runner-up (1.71pp, 6.8% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+        "mapes": {
+          "baseline": 27.753372849594115,
+          "lstm": 24.989413897196453,
+          "gbm": 23.28018317219137
+        }
+      },
+      "health_beauty": {
+        "selected_model": "gbm",
+        "confidence": "low",
+        "reason": "Margin over runner-up (4.76pp, 27.0% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+        "mapes": {
+          "baseline": 12.877188621793067,
+          "lstm": 19.136351267496742,
+          "gbm": 17.633814223449146
+        }
+      },
+      "housewares": {
+        "selected_model": "gbm",
+        "confidence": "low",
+        "reason": "Margin over runner-up (5.00pp, 26.6% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+        "mapes": {
+          "baseline": 13.785465980526972,
+          "lstm": 21.271578788757324,
+          "gbm": 18.7825062140515
+        }
+      },
+      "sports_leisure": {
+        "selected_model": "gbm",
+        "confidence": "low",
+        "reason": "Margin over runner-up (2.31pp, 13.2% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+        "mapes": {
+          "baseline": 17.55310645238958,
+          "lstm": 19.13680426279704,
+          "gbm": 15.244446534961003
+        }
+      },
+      "telephony": {
+        "selected_model": "lstm",
+        "confidence": "high",
+        "reason": "Lowest MAPE (21.08%), beating runner-up by 5.88pp (21.8% relative) \u2014 clears both the 5.15pp noise threshold and the 5% relative-improvement floor.",
+        "mapes": {
+          "baseline": 31.173773790314403,
+          "lstm": 21.08113670349121,
+          "gbm": 26.961057187353152
+        }
+      },
+      "watches_gifts": {
+        "selected_model": "gbm",
+        "confidence": "low",
+        "reason": "Margin over runner-up (2.12pp, 11.5% relative) did not clear the noise threshold (5.15pp via gbm_cv) and/or the 5% relative-improvement floor \u2014 defaulting to 'gbm', the global pooled winner, for consistency rather than picking an arbitrary lowest-MAPE model. Flagged low-confidence.",
+        "mapes": {
+          "baseline": 21.72414518911293,
+          "lstm": 18.40096632639567,
+          "gbm": 16.2834027301251
+        }
+      }
+    }
+  }
+}

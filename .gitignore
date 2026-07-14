@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Env / secrets — never commit these
+.env
+*.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow local tracking store (large, not needed for serving)
+mlruns/
+
+# Logs
+*.log
+
+mlartifacts/
+mlflow.db
