@@ -1,5 +1,5 @@
-﻿streamlit==1.58.0
-requests==2.34.0
+﻿streamlit==1.40.0
+requests==2.32.3
 numpy==1.26.4
 pandas==2.2.2
 plotly==5.22.0
