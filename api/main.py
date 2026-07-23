@@ -83,9 +83,7 @@ def load_gbm_models() -> dict:
 
 
 def build_gbm_explainers(gbm_models: dict) -> dict:
-    """SHAP TreeExplainer per horizon day (1–7), built once at startup.
-    All 7 are built here so /explain can serve any horizon without extra
-    cost — the original code built all 7 but only exposed day 1."""
+    """SHAP TreeExplainer per horizon day (1–7), built once at startup."""
     explainers = {}
     for day, booster in gbm_models["point"].items():
         explainers[day] = shap.TreeExplainer(booster)
@@ -116,8 +114,8 @@ async def lifespan(app: FastAPI):
     STATE["target_scaler"], _ = load_scalers()
     STATE["gbm"]            = load_gbm_models()
     STATE["gbm_explainers"] = build_gbm_explainers(STATE["gbm"])
-    STATE["lstm"]           = load_lstm_model()
-    STATE["lstm_intervals"] = load_lstm_intervals()
+    STATE["lstm"]           = None  # TensorFlow disabled for deployment
+    STATE["lstm_intervals"] = None
     log.info("Startup complete — ready to serve forecasts.")
     yield
     STATE.clear()
@@ -268,7 +266,10 @@ def forecast(req: ForecastRequest):
         if resolved.model == "gbm":
             result = predict_gbm(req.category)
         elif resolved.model == "lstm":
-            result = predict_lstm(req.category)
+            raise HTTPException(
+                status_code=501,
+                detail="LSTM unavailable in hosted deployment. Use model='auto' or 'gbm'.",
+            )
         else:
             raise HTTPException(
                 status_code=501,
