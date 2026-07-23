@@ -37,7 +37,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 import os
-API_BASE_URL = os.environ.get("API_BASE_URL", "http://127.0.0.1:8000")
+API_BASE_URL = os.environ.get("API_BASE_URL", "https://supply-chain-intelligence-fyff.onrender.com")
 
 st.set_page_config(
     page_title="Supply Chain Intelligence Platform",
