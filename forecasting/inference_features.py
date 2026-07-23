@@ -89,6 +89,22 @@ SCALE_COLS = [
 # rolling windows on too-short a slice. 60 is a deliberate safety margin,
 # not a magic number copied from training (training used full history).
 LOOKBACK_DAYS = 60
+INFERENCE_CACHE_PATH = PROCESSED_DIR / 'inference_cache.csv'
+
+def load_from_cache(category: str) -> pd.DataFrame:
+    if not INFERENCE_CACHE_PATH.exists():
+        raise InferenceFeatureError('inference_cache.csv not found in data/processed/')
+    df = pd.read_csv(INFERENCE_CACHE_PATH)
+    if category not in df['category'].values:
+        available = df['category'].tolist()
+        raise InferenceFeatureError(f'Category {category!r} not in cache. Available: {available}')
+    row = df[df['category'] == category].iloc[[-1]].copy()
+    known_categories = load_known_categories()
+    cat_dtype = pd.CategoricalDtype(categories=known_categories)
+    row['category'] = row['category'].astype(cat_dtype)
+    row['anchor'] = row['units_sold'].values
+    return row[['category', 'anchor'] + FEATURE_COLS]
+
 
 
 class InferenceFeatureError(RuntimeError):
@@ -344,7 +360,6 @@ def get_dataset_latest_date(engine, buffer_days: int = DATASET_TAIL_BUFFER_DAYS)
     max_date = max_date if isinstance(max_date, date) else pd.Timestamp(max_date).date()
     return max_date - timedelta(days=buffer_days)
 
-
 def build_inference_row(category: str, as_of_date: date | None = None,
                          engine=None) -> pd.DataFrame:
     """The one function the FastAPI endpoint should call.
@@ -359,8 +374,13 @@ def build_inference_row(category: str, as_of_date: date | None = None,
     real world has zero matching rows and would silently return all-zero
     features instead of erroring).
     """
-    owns_engine = engine is None
-    engine = engine or get_engine()
+    if engine is None:
+        try:
+            engine = get_engine()
+        except InferenceFeatureError:
+            log.warning("MySQL unavailable — falling back to inference_cache.csv")
+            return load_from_cache(category)
+
     as_of_date = as_of_date or get_dataset_latest_date(engine)
 
     try:
@@ -374,8 +394,7 @@ def build_inference_row(category: str, as_of_date: date | None = None,
 
         return scaled_row.drop(columns=["sale_date"])
     finally:
-        if owns_engine:
-            engine.dispose()
+        engine.dispose()
 
 
 # ── LSTM sequence building (different shape requirement than GBM) ────────
