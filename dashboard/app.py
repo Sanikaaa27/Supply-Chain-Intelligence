@@ -57,7 +57,7 @@ st.set_page_config(
 # BG_CARD  → #131C2C
 # BG_APP   → #0A0E1A
 # BORDER   → #1E2A3E
-# TEXT_DIM → #A0AEC0
+# TEXT_DIM → #FFFFFF
 # TEXT     → #EDF2F7
 
 PALETTE = {
@@ -116,7 +116,7 @@ html, body, [class*="css"] { font-size: 16px !important; }
 h2 { font-size: 26px !important; font-weight: 700 !important; color: #EDF2F7 !important; margin-top: 1rem !important; }
 h3 { font-size: 19px !important; font-weight: 600 !important; color: #EDF2F7 !important; }
 
-[data-testid="stTabs"] button { font-size: 13px !important; font-weight: 600 !important; color: #A0AEC0 !important; padding: 8px 12px !important; }
+[data-testid="stTabs"] button { font-size: 13px !important; font-weight: 600 !important; color: #FFFFFF !important; padding: 8px 12px !important; }
 [data-testid="stTabs"] button[aria-selected="true"] { color: #00E5FF !important; border-bottom: 2px solid #00E5FF !important; }
 
 [data-baseweb="select"] > div:first-child { background: #131C2C !important; border: 1px solid #2D3A5E !important; border-radius: 10px !important; }
@@ -175,7 +175,7 @@ h3 { font-size: 19px !important; font-weight: 600 !important; color: #EDF2F7 !im
 .abc-c { background: rgba(0,229,255,0.12); color: #00E5FF; border: 1px solid rgba(0,229,255,0.3); border-radius: 6px; padding: 2px 8px; font-size: 11px; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
 
 hr { border-color: #1E2A3E !important; }
-label { color: #A0AEC0 !important; font-size: 13px !important; font-weight: 600 !important; text-transform: uppercase !important; }
+label { color: #FFFFFF !important; font-size: 13px !important; font-weight: 600 !important; text-transform: uppercase !important; }
 ::-webkit-scrollbar { width: 8px; height: 8px; }
 ::-webkit-scrollbar-track { background: #0F1525; }
 ::-webkit-scrollbar-thumb { background: #2D3A5E; border-radius: 4px; }
@@ -422,7 +422,7 @@ with st.sidebar:
         <div style='font-size:28px;background:linear-gradient(135deg, #00E5FF, #FFA94D);
                     -webkit-background-clip:text;-webkit-text-fill-color:transparent;
                     font-weight:800;letter-spacing:-0.5px;'>📦 SupplyChain IQ</div>
-        <div style='color:#A0AEC0;font-size:11px;letter-spacing:1px;margin-top:6px;font-weight:600;'>
+        <div style='color:#FFFFFF;font-size:11px;letter-spacing:1px;margin-top:6px;font-weight:600;'>
             DEMAND FORECASTING & DECISION INTELLIGENCE
         </div>
     </div>
@@ -449,7 +449,7 @@ with st.sidebar:
                     <span style='color:#EDF2F7;font-size:12px;'>{name}</span>
                     <span style='color:{color};font-family:JetBrains Mono,monospace;font-size:12px;font-weight:700;'>{mape}%</span>
                 </div>
-                <div style='color:#718096;font-size:10px;'>{note}</div>
+                <div style='color:#FFFFFF;font-size:10px;'>{note}</div>
             </div>""", unsafe_allow_html=True)
 
     with st.expander("⚙️ INVENTORY ASSUMPTIONS", expanded=True):
@@ -462,7 +462,7 @@ with st.sidebar:
 
     st.divider()
     st.markdown("""
-    <div style='color:#4A5568;font-size:10px;text-align:center;padding:10px;'>
+    <div style='color:#FFFFFF;font-size:10px;text-align:center;padding:10px;'>
         ⚡ LightGBM + LSTM · Auto Model Routing<br>
         🎯 Conformal Intervals · SHAP<br>
         🐍 FastAPI · MySQL · Olist Dataset
@@ -553,7 +553,7 @@ with tab1:
         model_color = PALETTE["gbm"] if result["model_used"].lower() == "gbm" else PALETTE["lstm"]
         m1.markdown(f"""
         <div style='background:#131C2C;border:1px solid {model_color};border-radius:16px;padding:18px;text-align:center;'>
-            <div style='color:#A0AEC0;font-size:11px;text-transform:uppercase;margin-bottom:8px;letter-spacing:1px;'>Model Used</div>
+            <div style='color:#FFFFFF;font-size:11px;text-transform:uppercase;margin-bottom:8px;letter-spacing:1px;'>Model Used</div>
             <div style='color:{model_color};font-size:24px;font-weight:700;font-family:JetBrains Mono,monospace;'>{result['model_used'].upper()}</div>
         </div>""", unsafe_allow_html=True)
 
@@ -568,7 +568,7 @@ with tab1:
 
         m2.markdown(f"""
         <div style='background:#131C2C;border:1px solid {badge_color};border-radius:16px;padding:18px;text-align:center;'>
-            <div style='color:#A0AEC0;font-size:11px;text-transform:uppercase;margin-bottom:8px;letter-spacing:1px;'>Confidence</div>
+            <div style='color:#FFFFFF;font-size:11px;text-transform:uppercase;margin-bottom:8px;letter-spacing:1px;'>Confidence</div>
             <div style='color:{badge_color};font-size:24px;font-weight:700;font-family:JetBrains Mono,monospace;'>{conf_icon} {conf_label}</div>
         </div>""", unsafe_allow_html=True)
 
@@ -582,14 +582,14 @@ with tab1:
         demand_flag  = " ⚠️" if not demand_ok else ""
         m3.markdown(f"""
         <div style='background:#131C2C;border:1px solid #1E2A3E;border-radius:16px;padding:18px;text-align:center;'>
-            <div style='color:#A0AEC0;font-size:11px;text-transform:uppercase;margin-bottom:8px;letter-spacing:1px;'>Avg Daily Demand{demand_flag}</div>
+            <div style='color:#FFFFFF;font-size:11px;text-transform:uppercase;margin-bottom:8px;letter-spacing:1px;'>Avg Daily Demand{demand_flag}</div>
             <div style='color:{demand_color};font-size:24px;font-weight:700;font-family:JetBrains Mono,monospace;'>{avg_d:.2f}</div>
-            {"<div style='color:#718096;font-size:10px;margin-top:4px;'>Historical avg: " + f"{expected_daily:.2f}" + "</div>" if expected_daily else ""}
+            {"<div style='color:#FFFFFF;font-size:10px;margin-top:4px;'>Historical avg: " + f"{expected_daily:.2f}" + "</div>" if expected_daily else ""}
         </div>""", unsafe_allow_html=True)
 
         m4.markdown(f"""
         <div style='background:#131C2C;border:1px solid #1E2A3E;border-radius:16px;padding:18px;text-align:center;'>
-            <div style='color:#A0AEC0;font-size:11px;text-transform:uppercase;margin-bottom:8px;letter-spacing:1px;'>7-Day Total</div>
+            <div style='color:#FFFFFF;font-size:11px;text-transform:uppercase;margin-bottom:8px;letter-spacing:1px;'>7-Day Total</div>
             <div style='color:#FFA94D;font-size:24px;font-weight:700;font-family:JetBrains Mono,monospace;'>{total_7d:.1f}</div>
         </div>""", unsafe_allow_html=True)
 
@@ -642,7 +642,7 @@ with tab1:
             paper_bgcolor="#131C2C", plot_bgcolor="#131C2C", font={"color": "#EDF2F7"},
             xaxis={"gridcolor": "#1E2A3E"}, yaxis={"gridcolor": "#1E2A3E", "title": "Units Sold"},
             hovermode="x unified", height=440, margin=dict(t=60, b=40),
-            legend={"font": {"color": "#A0AEC0"}, "bgcolor": "rgba(0,0,0,0)"})
+            legend={"font": {"color": "#FFFFFF"}, "bgcolor": "rgba(0,0,0,0)"})
         st.plotly_chart(fig, use_container_width=True, config={"displaylogo": False})
 
         if not has_interval:
@@ -727,33 +727,33 @@ with tab2:
         c1.markdown(f"""
         <div style='background:#131C2C;border:2px solid {rop_color};border-radius:16px;padding:20px;text-align:center;'>
             <div style='font-size:20px;margin-bottom:6px;'>🔁</div>
-            <div style='color:#A0AEC0;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;'>Reorder Point</div>
+            <div style='color:#FFFFFF;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;'>Reorder Point</div>
             <div style='color:{rop_color};font-size:28px;font-weight:700;font-family:JetBrains Mono,monospace;'>{rop:.0f}</div>
-            <div style='color:#718096;font-size:11px;margin-top:4px;'>units</div>
+            <div style='color:#FFFFFF;font-size:11px;margin-top:4px;'>units</div>
         </div>""", unsafe_allow_html=True)
 
         c2.markdown(f"""
         <div style='background:#131C2C;border:2px solid {ss_color};border-radius:16px;padding:20px;text-align:center;'>
             <div style='font-size:20px;margin-bottom:6px;'>🛡️</div>
-            <div style='color:#A0AEC0;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;'>Safety Stock</div>
+            <div style='color:#FFFFFF;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;'>Safety Stock</div>
             <div style='color:{ss_color};font-size:28px;font-weight:700;font-family:JetBrains Mono,monospace;'>{ss:.0f}</div>
-            <div style='color:#718096;font-size:11px;margin-top:4px;'>{"⚠ low buffer" if ss < 5 else "units"}</div>
+            <div style='color:#FFFFFF;font-size:11px;margin-top:4px;'>{"⚠ low buffer" if ss < 5 else "units"}</div>
         </div>""", unsafe_allow_html=True)
 
         c3.markdown(f"""
         <div style='background:#131C2C;border:2px solid {PALETTE["gbm"]};border-radius:16px;padding:20px;text-align:center;'>
             <div style='font-size:20px;margin-bottom:6px;'>📦</div>
-            <div style='color:#A0AEC0;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;'>EOQ</div>
+            <div style='color:#FFFFFF;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;'>EOQ</div>
             <div style='color:{PALETTE["gbm"]};font-size:28px;font-weight:700;font-family:JetBrains Mono,monospace;'>{eoq:.0f}</div>
-            <div style='color:#718096;font-size:11px;margin-top:4px;'>units/order</div>
+            <div style='color:#FFFFFF;font-size:11px;margin-top:4px;'>units/order</div>
         </div>""", unsafe_allow_html=True)
 
         c4.markdown(f"""
         <div style='background:#131C2C;border:2px solid #B388FF;border-radius:16px;padding:20px;text-align:center;'>
             <div style='font-size:20px;margin-bottom:6px;'>🔄</div>
-            <div style='color:#A0AEC0;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;'>Orders / Year</div>
+            <div style='color:#FFFFFF;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px;'>Orders / Year</div>
             <div style='color:#B388FF;font-size:28px;font-weight:700;font-family:JetBrains Mono,monospace;'>{opy:.1f}</div>
-            <div style='color:#718096;font-size:11px;margin-top:4px;'>orders</div>
+            <div style='color:#FFFFFF;font-size:11px;margin-top:4px;'>orders</div>
         </div>""", unsafe_allow_html=True)
 
         st.markdown("<br>", unsafe_allow_html=True)
@@ -773,11 +773,11 @@ with tab2:
                             ₹{revenue_at_risk:,.0f}
                         </span>
                     </div>
-                    <div style='color:#718096;font-size:10px;margin-top:6px;'>Stockout cost assumed = 2× unit cost (lost sale + goodwill). Adjust unit cost in sidebar to recalculate.</div>
+                    <div style='color:#FFFFFF;font-size:10px;margin-top:6px;'>Stockout cost assumed = 2× unit cost (lost sale + goodwill). Adjust unit cost in sidebar to recalculate.</div>
                 </div>
                 <div style='text-align:center;padding-left:20px;min-width:80px;'>
                     <div style='color:{PALETTE["alert"]};font-size:32px;font-weight:800;font-family:JetBrains Mono,monospace;'>{stockout_pct:.0f}%</div>
-                    <div style='color:#718096;font-size:10px;'>risk</div>
+                    <div style='color:#FFFFFF;font-size:10px;'>risk</div>
                 </div>
             </div>
         </div>""", unsafe_allow_html=True)
@@ -790,22 +790,22 @@ with tab2:
             </div>
             <div style='display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:12px;'>
                 <div style='text-align:center;'>
-                    <div style='color:#718096;font-size:10px;text-transform:uppercase;letter-spacing:1px;'>MAPE Improvement</div>
+                    <div style='color:#FFFFFF;font-size:10px;text-transform:uppercase;letter-spacing:1px;'>MAPE Improvement</div>
                     <div style='color:{PALETTE["success"]};font-size:22px;font-weight:700;font-family:JetBrains Mono,monospace;'>{impact["mape_improvement_pct"]:.2f}%</div>
-                    <div style='color:#718096;font-size:10px;'>GBM vs baseline</div>
+                    <div style='color:#FFFFFF;font-size:10px;'>GBM vs baseline</div>
                 </div>
                 <div style='text-align:center;'>
-                    <div style='color:#718096;font-size:10px;text-transform:uppercase;letter-spacing:1px;'>Holding Cost Saved</div>
+                    <div style='color:#FFFFFF;font-size:10px;text-transform:uppercase;letter-spacing:1px;'>Holding Cost Saved</div>
                     <div style='color:{PALETTE["success"]};font-size:22px;font-weight:700;font-family:JetBrains Mono,monospace;'>₹{impact["excess_holding_savings"]:,.0f}</div>
-                    <div style='color:#718096;font-size:10px;'>less excess stock</div>
+                    <div style='color:#FFFFFF;font-size:10px;'>less excess stock</div>
                 </div>
                 <div style='text-align:center;'>
-                    <div style='color:#718096;font-size:10px;text-transform:uppercase;letter-spacing:1px;'>Total Annual Savings</div>
+                    <div style='color:#FFFFFF;font-size:10px;text-transform:uppercase;letter-spacing:1px;'>Total Annual Savings</div>
                     <div style='color:{PALETTE["success"]};font-size:26px;font-weight:800;font-family:JetBrains Mono,monospace;'>₹{impact["total_annual_savings"]:,.0f}</div>
-                    <div style='color:#718096;font-size:10px;'>vs naive ordering</div>
+                    <div style='color:#FFFFFF;font-size:10px;'>vs naive ordering</div>
                 </div>
             </div>
-            <div style='color:#4A5568;font-size:10px;margin-top:10px;border-top:1px solid #1E2A3E;padding-top:8px;'>
+            <div style='color:#FFFFFF;font-size:10px;margin-top:10px;border-top:1px solid #1E2A3E;padding-top:8px;'>
                 Assumptions: stockout cost = 2× unit cost · holding rate = {sb_holding_rate*100:.0f}% · 
                 GBM MAPE 18.56% vs baseline 19.17% · per-category estimate scaled from annual demand.
             </div>
@@ -823,7 +823,7 @@ with tab2:
                 textposition="outside"))
             fig_cost.update_layout(paper_bgcolor="#131C2C", plot_bgcolor="#131C2C", font={"color": "#EDF2F7"},
                 height=300, margin=dict(l=20, r=20, t=20, b=20),
-                yaxis={"gridcolor": "#1E2A3E", "title": "₹/year"}, xaxis={"color": "#A0AEC0"},
+                yaxis={"gridcolor": "#1E2A3E", "title": "₹/year"}, xaxis={"color": "#FFFFFF"},
                 showlegend=False)
             st.plotly_chart(fig_cost, use_container_width=True, config={"displaylogo": False})
 
@@ -959,7 +959,7 @@ with tab3:
             fig_tradeoff.update_layout(
                 paper_bgcolor="#131C2C", plot_bgcolor="#131C2C", font={"color": "#EDF2F7"},
                 height=300, margin=dict(l=20, r=20, t=20, b=20),
-                xaxis={"title": "Target Service Level", "color": "#A0AEC0"},
+                xaxis={"title": "Target Service Level", "color": "#FFFFFF"},
                 yaxis={"gridcolor": "#1E2A3E", "title": "Safety Stock (units)"})
             st.plotly_chart(fig_tradeoff, use_container_width=True, config={"displaylogo": False})
             st.caption("Higher service levels require more safety stock — use this to justify your chosen level.")
@@ -979,7 +979,7 @@ with tab3:
             fig_lt.update_layout(
                 paper_bgcolor="#131C2C", plot_bgcolor="#131C2C", font={"color": "#EDF2F7"},
                 height=300, margin=dict(l=20, r=20, t=20, b=20),
-                xaxis={"title": "Supplier Lead Time", "color": "#A0AEC0"},
+                xaxis={"title": "Supplier Lead Time", "color": "#FFFFFF"},
                 yaxis={"gridcolor": "#1E2A3E", "title": "Reorder Point (units)"},
                 showlegend=False)
             st.plotly_chart(fig_lt, use_container_width=True, config={"displaylogo": False})
@@ -1058,9 +1058,9 @@ with tab4:
         fig_bar.update_layout(
             paper_bgcolor="#131C2C", plot_bgcolor="#131C2C", font={"color": "#EDF2F7"},
             height=360, margin=dict(l=20, r=20, t=20, b=80),
-            xaxis={"color": "#A0AEC0", "tickangle": -35},
+            xaxis={"color": "#FFFFFF", "tickangle": -35},
             yaxis={"gridcolor": "#1E2A3E", "title": "Units (7-day)"},
-            legend={"font": {"color": "#A0AEC0"}, "bgcolor": "rgba(0,0,0,0)", "title": None})
+            legend={"font": {"color": "#FFFFFF"}, "bgcolor": "rgba(0,0,0,0)", "title": None})
         st.plotly_chart(fig_bar, use_container_width=True, config={"displaylogo": False})
 
     with cc2:
@@ -1081,7 +1081,7 @@ with tab4:
         fig_pie.update_layout(
             paper_bgcolor="#131C2C", font={"color": "#EDF2F7"}, height=360,
             margin=dict(l=20, r=20, t=20, b=20),
-            legend={"font": {"color": "#A0AEC0"}, "bgcolor": "rgba(0,0,0,0)"})
+            legend={"font": {"color": "#FFFFFF"}, "bgcolor": "rgba(0,0,0,0)"})
         st.plotly_chart(fig_pie, use_container_width=True, config={"displaylogo": False})
 
     # ── Full table with ABC and scaling check ─────
@@ -1100,7 +1100,7 @@ with tab4:
         abc_html = f'<span class="abc-{abc.lower()}">{abc}</span>' if abc in ("A","B","C") else abc
         model_color = PALETTE["gbm"] if row["Model"] == "GBM" else (PALETTE["lstm"] if row["Model"] == "LSTM" else PALETTE["alert"])
         conf_val = row.get("Confidence", "—")
-        conf_color = risk_color(str(conf_val).lower()) or "#718096"
+        conf_color = risk_color(str(conf_val).lower()) or "#FFFFFF"
 
         st.markdown(f"""
         <div style='background:#131C2C;border:1px solid #1E2A3E;border-radius:10px;
@@ -1179,8 +1179,8 @@ with tab5:
             fig_cmp.update_layout(
                 paper_bgcolor="#131C2C", plot_bgcolor="#131C2C", font={"color": "#EDF2F7"},
                 height=380, margin=dict(l=20, r=20, t=20, b=20),
-                xaxis={"color": "#A0AEC0"}, yaxis={"gridcolor": "#1E2A3E", "title": "Forecast (units)"},
-                legend={"font": {"color": "#A0AEC0"}, "bgcolor": "rgba(0,0,0,0)"})
+                xaxis={"color": "#FFFFFF"}, yaxis={"gridcolor": "#1E2A3E", "title": "Forecast (units)"},
+                legend={"font": {"color": "#FFFFFF"}, "bgcolor": "rgba(0,0,0,0)"})
             st.plotly_chart(fig_cmp, use_container_width=True, config={"displaylogo": False})
 
     st.markdown("<br>", unsafe_allow_html=True)
@@ -1226,7 +1226,7 @@ with tab5:
                 paper_bgcolor="#131C2C", plot_bgcolor="#131C2C", font={"color": "#EDF2F7"},
                 height=340, margin=dict(l=20, r=20, t=20, b=20),
                 xaxis={"gridcolor": "#1E2A3E", "title": "Direction (normalized)", "range": [-1.4, 1.4]},
-                yaxis={"color": "#A0AEC0"},
+                yaxis={"color": "#FFFFFF"},
                 showlegend=False)
             st.plotly_chart(fig_shap, use_container_width=True, config={"displaylogo": False})
             st.caption("🔴 feature pushes Day-1 demand **up** &nbsp;&nbsp; 🟢 pushes Day-1 demand **down**. "
@@ -1281,33 +1281,33 @@ with tab6:
     e1.markdown(f"""
     <div style='background:#131C2C;border:2px solid {PALETTE["gbm"]};border-radius:16px;padding:22px;text-align:center;'>
         <div style='font-size:24px;margin-bottom:8px;'>📦</div>
-        <div style='color:#A0AEC0;font-size:11px;text-transform:uppercase;letter-spacing:1px;'>Categories Automated</div>
+        <div style='color:#FFFFFF;font-size:11px;text-transform:uppercase;letter-spacing:1px;'>Categories Automated</div>
         <div style='color:{PALETTE["gbm"]};font-size:36px;font-weight:800;font-family:JetBrains Mono,monospace;margin:6px 0;'>{total_categories}</div>
-        <div style='color:#718096;font-size:11px;'>{gbm_routed} GBM · {lstm_routed} LSTM</div>
+        <div style='color:#FFFFFF;font-size:11px;'>{gbm_routed} GBM · {lstm_routed} LSTM</div>
     </div>""", unsafe_allow_html=True)
 
     e2.markdown(f"""
     <div style='background:#131C2C;border:2px solid {PALETTE["success"]};border-radius:16px;padding:22px;text-align:center;'>
         <div style='font-size:24px;margin-bottom:8px;'>💰</div>
-        <div style='color:#A0AEC0;font-size:11px;text-transform:uppercase;letter-spacing:1px;'>Est. Annual Savings</div>
+        <div style='color:#FFFFFF;font-size:11px;text-transform:uppercase;letter-spacing:1px;'>Est. Annual Savings</div>
         <div style='color:{PALETTE["success"]};font-size:30px;font-weight:800;font-family:JetBrains Mono,monospace;margin:6px 0;'>₹{est_annual_savings:,.0f}</div>
-        <div style='color:#718096;font-size:11px;'>vs naive baseline ordering</div>
+        <div style='color:#FFFFFF;font-size:11px;'>vs naive baseline ordering</div>
     </div>""", unsafe_allow_html=True)
 
     e3.markdown(f"""
     <div style='background:#131C2C;border:2px solid {PALETTE["lstm"]};border-radius:16px;padding:22px;text-align:center;'>
         <div style='font-size:24px;margin-bottom:8px;'>📊</div>
-        <div style='color:#A0AEC0;font-size:11px;text-transform:uppercase;letter-spacing:1px;'>Inventory Value Covered</div>
+        <div style='color:#FFFFFF;font-size:11px;text-transform:uppercase;letter-spacing:1px;'>Inventory Value Covered</div>
         <div style='color:{PALETTE["lstm"]};font-size:30px;font-weight:800;font-family:JetBrains Mono,monospace;margin:6px 0;'>₹{total_inventory_value:,.0f}</div>
-        <div style='color:#718096;font-size:11px;'>{sb_lead_time}d lead time stock at ₹{sb_unit_cost:.0f}/unit</div>
+        <div style='color:#FFFFFF;font-size:11px;'>{sb_lead_time}d lead time stock at ₹{sb_unit_cost:.0f}/unit</div>
     </div>""", unsafe_allow_html=True)
 
     e4.markdown(f"""
     <div style='background:#131C2C;border:2px solid {PALETTE["auto"]};border-radius:16px;padding:22px;text-align:center;'>
         <div style='font-size:24px;margin-bottom:8px;'>🎯</div>
-        <div style='color:#A0AEC0;font-size:11px;text-transform:uppercase;letter-spacing:1px;'>Forecast Accuracy</div>
+        <div style='color:#FFFFFF;font-size:11px;text-transform:uppercase;letter-spacing:1px;'>Forecast Accuracy</div>
         <div style='color:{PALETTE["auto"]};font-size:36px;font-weight:800;font-family:JetBrains Mono,monospace;margin:6px 0;'>18.56%</div>
-        <div style='color:#718096;font-size:11px;'>avg MAPE (GBM, held-out)</div>
+        <div style='color:#FFFFFF;font-size:11px;'>avg MAPE (GBM, held-out)</div>
     </div>""", unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
@@ -1338,7 +1338,7 @@ with tab6:
                 Combined across all categories at {avg_daily_total:.1f} units/day average = 
                 <b style='color:{PALETTE["success"]};'>₹{est_annual_savings:,.0f}/year</b>.
             </div>
-            <div style='color:#4A5568;font-size:10px;margin-top:8px;'>
+            <div style='color:#FFFFFF;font-size:10px;margin-top:8px;'>
                 Assumption: stockout cost = 2× unit cost. Adjust unit cost in sidebar to recalculate.
             </div>
         </div>""", unsafe_allow_html=True)
@@ -1359,17 +1359,17 @@ with tab6:
         <div style='background:#131C2C;border:1px solid #1E2A3E;border-radius:14px;padding:20px;'>
             <div style='color:{PALETTE["gbm"]};font-size:13px;font-weight:700;margin-bottom:10px;'>🔑 KEY INTERVIEW NUMBERS</div>
             <div style='color:#EDF2F7;font-size:13px;line-height:1.8;'>
-                <span style='color:#A0AEC0;'>Best model MAPE:</span> <b>18.56%</b> (GBM)<br>
-                <span style='color:#A0AEC0;'>vs baseline:</span> <b>19.17%</b> → {mape_improvement:.2f}% improvement<br>
-                <span style='color:#A0AEC0;'>Interval coverage:</span> <b>94.9%</b> at 95% target<br>
-                <span style='color:#A0AEC0;'>Categories automated:</span> <b>{total_categories}</b><br>
-                <span style='color:#A0AEC0;'>Estimated annual savings:</span> <b style='color:{PALETTE["success"]};'>₹{est_annual_savings:,.0f}</b><br>
-                <span style='color:#A0AEC0;'>LSTM directional lift:</span> <b>+14–16pp</b> over random guess
+                <span style='color:#FFFFFF;'>Best model MAPE:</span> <b>18.56%</b> (GBM)<br>
+                <span style='color:#FFFFFF;'>vs baseline:</span> <b>19.17%</b> → {mape_improvement:.2f}% improvement<br>
+                <span style='color:#FFFFFF;'>Interval coverage:</span> <b>94.9%</b> at 95% target<br>
+                <span style='color:#FFFFFF;'>Categories automated:</span> <b>{total_categories}</b><br>
+                <span style='color:#FFFFFF;'>Estimated annual savings:</span> <b style='color:{PALETTE["success"]};'>₹{est_annual_savings:,.0f}</b><br>
+                <span style='color:#FFFFFF;'>LSTM directional lift:</span> <b>+14–16pp</b> over random guess
             </div>
         </div>""", unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
-    st.markdown(f"<div style='color:#4A5568;font-size:11px;font-family:JetBrains Mono,monospace;'>All ₹ figures recalculate dynamically based on sidebar unit cost (₹{sb_unit_cost:.0f}) and holding rate ({sb_holding_rate*100:.0f}%). Change them in the sidebar and this page updates.</div>", unsafe_allow_html=True)
+    st.markdown(f"<div style='color:#FFFFFF;font-size:11px;font-family:JetBrains Mono,monospace;'>All ₹ figures recalculate dynamically based on sidebar unit cost (₹{sb_unit_cost:.0f}) and holding rate ({sb_holding_rate*100:.0f}%). Change them in the sidebar and this page updates.</div>", unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════
 # TAB 7 — SYSTEM OVERVIEW
@@ -1418,7 +1418,7 @@ with tab7:
 
         metric_items = [
             ("Best model MAPE (GBM)",       "18.56%",  PALETTE["gbm"],     "held-out walk-forward CV"),
-            ("Baseline MAPE",               "19.17%",  "#718096",           "seasonal naive / Prophet"),
+            ("Baseline MAPE",               "19.17%",  "#FFFFFF",           "seasonal naive / Prophet"),
             ("LSTM MAPE",                   "20.44%",  PALETTE["lstm"],     "telephony only"),
             ("80% interval coverage",       "80.0%",   PALETTE["success"],  "calibrated, target 80%"),
             ("95% interval coverage",       "94.9%",   PALETTE["success"],  "calibrated, target 95%"),
@@ -1433,7 +1433,7 @@ with tab7:
                         padding:10px 0;border-bottom:1px solid #1E2A3E;'>
                 <div>
                     <span style='color:#FFFFFF;font-size:13px;'>{label}</span>
-                    <div style='color:#718096;font-size:10px;'>{note}</div>
+                    <div style='color:#FFFFFF;font-size:10px;'>{note}</div>
                 </div>
                 <span style='color:{color};font-family:JetBrains Mono,monospace;font-size:16px;font-weight:700;'>{value}</span>
             </div>""", unsafe_allow_html=True)
@@ -1453,14 +1453,13 @@ with tab7:
             st.markdown(f"""
             <div style='padding:8px 0;border-bottom:1px solid #1E2A3E;'>
                 <span style='color:#EDF2F7;font-size:13px;font-weight:600;'>{tech}</span><br>
-                <span style='color:#A0AEC0;font-size:12px;'>{detail}</span>
+                <span style='color:#FFFFFF;font-size:12px;'>{detail}</span>
             </div>""", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
 
     st.divider()
     st.markdown(f"""
-    <div style='text-align:center;color:#4A5568;font-size:11px;font-family:JetBrains Mono,monospace;padding:20px;'>
+    <div style='text-align:center;color:#FFFFFF;font-size:11px;font-family:JetBrains Mono,monospace;padding:20px;'>
         SUPPLY CHAIN INTELLIGENCE PLATFORM &nbsp;·&nbsp; LightGBM + LSTM + FastAPI + Streamlit &nbsp;·&nbsp;
         Unit cost ₹{sb_unit_cost:.0f} · Holding {sb_holding_rate*100:.0f}%/yr · Lead time {sb_lead_time}d
     </div>""", unsafe_allow_html=True)
-    
